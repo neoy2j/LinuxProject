@@ -10,3 +10,5 @@ venv/ #아까 말한대로 무겁고, 팀원들에게는 requirements.txt 만 �
 #IDE 
 .idea/ #pycharm설정이 기기 마다 달라 넘기면 충돌생김
 .DS_Store  #macOS에 해당되는 것 넘길필요X
+
+.idea/
