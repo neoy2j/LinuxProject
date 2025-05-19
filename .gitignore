@@ -1,12 +1,12 @@
+###gitignore###
+
 #Python
-__pycache__/
-*.py[cod]
+__pycache__/  #자동생성되어 넘길 필요X
+*.py[cod]  #설명들어도 모르겠다
 
 #가상환경
-venv/
+venv/ #아까 말한대로 무겁고, 팀원들에게는 requirements.txt 만 건네면 되니 필요 X
 
-#IDE pycharm설정이 기기 마다 달라
-.idea/
-.DS_Store
-
-
+#IDE 
+.idea/ #pycharm설정이 기기 마다 달라 넘기면 충돌생김
+.DS_Store  #macOS에 해당되는 것 넘길필요X
