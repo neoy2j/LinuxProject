@@ -99,3 +99,42 @@ th {
   align-items: center;
 }
 
+/*------------------------------------------------스크롤바 디자인 -------------------------------------------------------*/
+ .todo-row {
+    display: flex;
+    gap: 1rem; /* Tailwind gap-4 */
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .todo-row::-webkit-scrollbar {
+    height: 8px;
+  }
+  .todo-row::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 4px;
+  }
+  .todo-row {
+    scrollbar-width: thin;
+  }
+
+  .card {
+    flex: 0 0 calc((100% - 3rem) / 4); /* 4장만 보이게 */
+    scroll-snap-align: start;
+  }
+
+  /* 반응형: 필요 시 카드 폭 조정 */
+  @media (max-width: 1024px) {
+    .card {
+      flex: 0 0 calc((100% - 2rem) / 3);
+    }
+  }
+  @media (max-width: 640px) {
+    .card {
+      flex: 0 0 calc((100% - 1rem) / 2);
+    }
+  }
+
+/*--------------------------------------------------------------------------------------------------------------------*/

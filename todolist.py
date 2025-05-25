@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
+from flask_sqlalchemy import SQLAlchemy
 
 todolist = Flask(__name__)
-
 USER_DATA = {
     "testuser": "1234"
 }
